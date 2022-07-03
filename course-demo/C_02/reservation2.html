@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation 2</title>
+    <style>
+      /* textarea{
+        resize: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <form action="result.html">
+      <h2>預約餐廳表單</h2>
+      <!-- TODO: ISP-113 -->
+      <hr>
+      <a href="menu.html" target="_blank">瀏覽菜單</a>
+      <div>
+        <label for="name">預約大名</label>
+        <input type="text" id="name" disabled/>
+      </div>
+      <div>
+        <label for="">性別</label>
+        <label for="man">
+          <input type="radio" name="gender" id="man"> 男
+        </label>
+        <label for="woman">
+          <input type="radio" name="gender" id="woman"> 女
+        </label>
+      </div>
+      <div>
+        <label for="">飯後點心</label>
+        <label for="snack-01">
+          <input type="checkbox" name="snack" id="snack-01"> 提拉米蘇
+        </label>
+        <label for="snack-02">
+          <input type="checkbox" name="snack" id="snack-02"> 布丁
+        </label>
+        <label for="snack-03">
+          <input type="checkbox" name="snack" id="snack-03"> 草莓蛋糕
+        </label>
+      </div>
+      <div>
+        <label for="date">預約用餐時間</label>
+        <input type="date" id="date" />
+      </div>
+      <div>
+        <label for="mobile">手機號碼</label>
+        <input type="tel" id="mobile" />
+      </div>
+      <div>
+        <label for="seat">座位</label>
+        <select name="seat" id="seat">
+          <option value="s1">靠窗</option>
+          <option value="s2">走道</option>
+          <option value="s3">吧台</option>
+        </select>
+      </div>
+      <div>
+        <label for="mark">備註</label>
+        <textarea name="mark" id="mark" cols="20" rows="3"></textarea>
+      </div>
+      <button type="reset">重設</button>
+      <button type="button" disabled>取消訂單</button>
+      <button type="submit">送出預約</button>
+    </form>
+    <script>
+      // var x =10 ;
+    </script>
+  </body>
+</html>

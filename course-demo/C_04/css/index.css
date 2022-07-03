@@ -1,0 +1,67 @@
+/* global style */
+
+body{
+  /* background-color: gray;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom; */
+  background:  url("https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png") no-repeat fixed right bottom;
+  font-family: Arial, Times, serif;
+  font-size: 20px;
+}
+
+h1, p, span {
+  font-weight: normal;
+  color: gray;
+  text-align: justify;
+}
+
+p{
+  text-indent: 50px;
+  font-size: 1.5rem;
+}
+
+article{
+  /* border-width: 1px;
+  border-style:  dashed;
+  border-color: black; */
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 50px 20px;
+  margin: 50px;
+}
+
+.box{
+  border: 1px solid gray;
+  display: inline;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.grid .month{
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.grid div{
+  background-color: blanchedalmond;
+}
+
+.grid-day{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+}
+.grid-day div{
+  padding: 4px;
+}
+
+.holiday{
+  color: red;
+}

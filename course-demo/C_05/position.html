@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        position: relative;
+      }
+      header {
+        background-color: black;
+        text-align: right;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      header ul li {
+        display: inline-block;
+      }
+      header ul li a {
+        color: white;
+        display: block;
+        padding: 8px;
+      }
+      header .logo{
+        color: white;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">LOGO</div>
+      <ul>
+        <li>
+          <a href="">首頁</a>
+        </li>
+        <li>
+          <a href="">作品集</a>
+        </li>
+        <li>
+          <a href="">履歷</a>
+        </li>
+        <li>
+          <a href="">與我聯絡</a>
+        </li>
+      </ul>
+    </header>
+    <article>
+      <img src="images/spyfamily_01.jpeg" alt="">
+      <img src="images/spyfamily_02.jpeg" alt="">
+      <img src="images/spyfamily_03.jpeg" alt="">
+      <img src="images/spyfamily_04.jpeg" alt="">
+    </article>
+  </body>
+</html>
