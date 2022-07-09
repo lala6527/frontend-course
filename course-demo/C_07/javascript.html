@@ -19,13 +19,12 @@
     </header>
     <main class="container">
       <h2>My First JavaScript</h2>
-      <button type="button" onclick={myFunction()}>
-        Click me to display Date and Time.</button>
-      <p id="demo"></p>
+      <button type="button" onclick={changeWord()}>
+        按鈕</button>
+      <p id="demo">this is demo word</p>
     </main>
     <script>
-      document.getElementById("demo").innerHTML = (5 + 6) * 10;
-      function myFunction() {
+      function changeWord() {
         document.getElementById("demo").innerHTML = Date();
       }
     </script>
