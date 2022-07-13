@@ -1,12 +1,12 @@
 # Front-end course 前端工程學習課程
 from 0 to 1 to learning front-end skills as a beginner
 
-## 1. 課程準備(https://docs.google.com/presentation/d/1VEowKkHGW0DX1W4zA72GDsNqyXvY8Jbk2XnxKgrVOsk/)
+## [1. 課程準備](https://docs.google.com/presentation/d/1VEowKkHGW0DX1W4zA72GDsNqyXvY8Jbk2XnxKgrVOsk/)
 - VS Code 下載與安裝
 - VS Code Extensions
 - 瀏覽器Browser簡介
 ## 2. HTML
-### 2-1. HTML(https://docs.google.com/presentation/d/1-WlJnKmr6ynL4WUZJil6obJh9oprSjmBjbcLUy2cono/)
+### [2-1. HTML](https://docs.google.com/presentation/d/1-WlJnKmr6ynL4WUZJil6obJh9oprSjmBjbcLUy2cono/)
 - HTML基本認識與了解
 - 第一個HTML網頁製作與Skeleton
 - 標題與段落<h*><p>
@@ -16,7 +16,7 @@ from 0 to 1 to learning front-end skills as a beginner
 - ul, ol 運用方式
 - 基本表格製作：table, colspan, thead, tbody, tfoot
 - 作業：製作菜單的HTML
-### 2-2. HTML(https://docs.google.com/presentation/d/1r0TU7E9Lk2z983BYW-Olu0LygFIOR_1P2apGeN6cRrY/)
+### [2-2. HTML](https://docs.google.com/presentation/d/1r0TU7E9Lk2z983BYW-Olu0LygFIOR_1P2apGeN6cRrY/)
 - Form基本製作
 - method, button, inputs
 - checkbox, value
@@ -28,7 +28,7 @@ from 0 to 1 to learning front-end skills as a beginner
 - div, br, hr 標籤使用
 - 作業：製作預約餐廳表單的HTML
 ## 3. CSS
-### 3-1. CSS(https://docs.google.com/presentation/d/1zb_wziZ2ZXC-q9s3v7kgqondwDCTugp4DO6cWqnPwT4/)
+### [3-1. CSS](https://docs.google.com/presentation/d/1zb_wziZ2ZXC-q9s3v7kgqondwDCTugp4DO6cWqnPwT4/)
 - CSS基本語法認識與程式碼放置位置
 - Selector: element, ID, classs, attribute
 - 顏色儲存方式：RGB, RGBA, HEX, HSL
@@ -38,7 +38,7 @@ from 0 to 1 to learning front-end skills as a beginner
 - Pseudo classes, elements
 - font-size, px, em, rem
 - 作業：菜單加入CSS
-### 3-2 CSS (https://docs.google.com/presentation/d/10HbYd1trhdtSu6KBP7NBPxB81-2mK6qGluNoAk-e_p4/)
+### [3-2 CSS](https://docs.google.com/presentation/d/10HbYd1trhdtSu6KBP7NBPxB81-2mK6qGluNoAk-e_p4/)
 - text-align, letter spacing, line height
 - font-family, font-weight, text-indent
 - background image and color
@@ -49,7 +49,7 @@ from 0 to 1 to learning front-end skills as a beginner
 - display
 - grid
 - 作業：年曆
-### 3-3 CSS(https://docs.google.com/presentation/d/1mbwgCORR19x3PaZXDu7bJqbTeAXshIYtbY5xiMhhYX4/)
+### [3-3 CSS](https://docs.google.com/presentation/d/1mbwgCORR19x3PaZXDu7bJqbTeAXshIYtbY5xiMhhYX4/)
 - position: static, relative, absolute, fixed, sticky
 - flex layout
 - cursor pointer
@@ -57,7 +57,7 @@ from 0 to 1 to learning front-end skills as a beginner
 - 2D transform and translate: rotate, scale
 - animation
 - 作業：製作簡易animation動畫 & header
-### 3-4 CSS
+### [3-4 CSS](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
 - opacity and display:none, visibility:hidden
 - float, clear
 - overflow
@@ -68,7 +68,7 @@ from 0 to 1 to learning front-end skills as a beginner
 - filter: blur, brightness, grayscale
 - 作業：portfolio page
 ## 4. Git
-### 4-1 Git
+### [4-1 Git](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
 - Introduction
 - Installation
 - setup ssh key
@@ -80,7 +80,7 @@ from 0 to 1 to learning front-end skills as a beginner
 - gitignore
 - 作業：upload first project on Github
 ## 5. JavaScript
-### 5-1 JavaScript
+### [5-1 JavaScript](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
 - Introduction
 - Syntax
 - Variables: var, let const
