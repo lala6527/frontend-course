@@ -9,7 +9,7 @@ from 0 to 1 to learning front-end skills as a beginner
 ### [2-1. HTML](https://docs.google.com/presentation/d/1-WlJnKmr6ynL4WUZJil6obJh9oprSjmBjbcLUy2cono/)
 - HTML基本認識與了解
 - 第一個HTML網頁製作與Skeleton
-- 標題與段落<h*><p>
+- head & parameter
 - metadata: title, viewport, description, og:data
 - 圖片設定img
 - File path設定應用
@@ -73,12 +73,13 @@ from 0 to 1 to learning front-end skills as a beginner
 - Installation
 - setup ssh key
 - basic: clone, pull, add, status, commit, push
+- 作業：upload first project on Github
 ### 4-2 Git
 - Github introduction
 - branch, merge
 - git reset
 - gitignore
-- 作業：upload first project on Github
+- 作業：
 ## 5. JavaScript
 ### [5-1 JavaScript](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
 - Introduction
@@ -88,7 +89,9 @@ from 0 to 1 to learning front-end skills as a beginner
 - Arithmetic
 - Assignment
 - Functions
-作業：
+```
+作業：Create 4 buttons and function to implement +, -, *, /
+```
 ### 5-2 JavaScript
 - Data Types
 - alert & console.log
@@ -98,7 +101,9 @@ from 0 to 1 to learning front-end skills as a beginner
 - Typeof
 - If Else
 - Functions with Variables
-- 作業：
+```
+作業：
+```
 ### 5-3 JavaScript
 - TBD
 ### 5-4 JavaScript
