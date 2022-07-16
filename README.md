@@ -1,34 +1,43 @@
-# Front-end course 前端工程學習課程
+# Front-end learning course
 from 0 to 1 to learning front-end skills as a beginner
 
-## [1. 課程準備](https://docs.google.com/presentation/d/1VEowKkHGW0DX1W4zA72GDsNqyXvY8Jbk2XnxKgrVOsk/)
-- VS Code 下載與安裝
-- VS Code Extensions
-- 瀏覽器Browser簡介
+## [1. prepare your workstation](https://docs.google.com/presentation/d/1VEowKkHGW0DX1W4zA72GDsNqyXvY8Jbk2XnxKgrVOsk/)
+- What is Front-end?
+- Roadmap
+- HTML5 / CSS / JavaScript
+- RWD
+- Node.js / React.js / Next.js
+- Visual studio Code installion
+- Git / Github
+- Figma
+- About Browsers
+- About Operation System (windows, Mac, Linux)
+```
+homework: setup your workstation
+```
 ## 2. HTML
 ### [2-1. HTML](https://docs.google.com/presentation/d/1-WlJnKmr6ynL4WUZJil6obJh9oprSjmBjbcLUy2cono/)
-- HTML基本認識與了解
-- 第一個HTML網頁製作與Skeleton
-- head & parameter
+- HTML introduction
+- To build a webpage
+- Head & parameter
 - metadata: title, viewport, description, og:data
-- 圖片設定img
-- File path設定應用
-- ul, ol 運用方式
-- 基本表格製作：table, colspan, thead, tbody, tfoot
+- Image setup
+- File path
+- List: ul, ol
+- Table: thead, tbody, tfoot, tr, td, colspan
 ```
 homework: To build a menu page by HTML
 ```
 ### [2-2. HTML](https://docs.google.com/presentation/d/1r0TU7E9Lk2z983BYW-Olu0LygFIOR_1P2apGeN6cRrY/)
-- Form基本製作
+- Form
 - method, button, inputs
 - checkbox, value
 - email and file<a>
 - select, option
 - datalist and textarea
-- comment 註解
+- comment
 - block and inline elements
-- div, br, hr 標籤使用
-- 作業：製作預約餐廳表單的HTML
+- div, br, hr 
 ```
 homework: To build a reservation page for restaurant by HTML
 ```
@@ -227,3 +236,8 @@ homework:
 ```
 homework:
 ```
+## 10. Interview
+- Target your goal
+- Interview questions
+- Practice: W3Schools LeetCode
+- Portfolio

@@ -1,151 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript 2</title>
-  <link rel="stylesheet" href="styles/global.css" />
-  <link rel="stylesheet" href="styles/header.css" />
-  <style>
-    .car {
-      border: 1px solid gray;
-      text-align: center;
-      padding: 20px;
-      margin: 20px 0;
-      width: 33%;
-    }
-
-    .car img {
-      width: 100%;
-    }
-
-    ul.pop li {
-      margin: 8px 0;
-    }
-  </style>
-</head>
-
-<body>
-  <header class="header">
-    <a href="index.html" class="logo">Frontend Course</a>
-    <ul>
-      <li><a href="index.html">首頁</a></li>
-      <li><a href="javascript.html">JavaScript</a></li>
-      <li><a href="https://github.com/bluetch/frontend-course">Github</a></li>
-    </ul>
-  </header>
-  <main class="container">
-    <h2>Data Type</h2>
-    <hr>
-    <h2>String logic</h2>
-    <hr>
-    <h2>Types are Dynamic</h2>
-    <hr>
-    <h2>Boolean</h2>
-    <hr>
-    <h2>Pop & test</h2>
-    <ul class="pop">
-      <li>alert()
-        <button onclick="handleAlert()">button</button>
-      </li>
-      <li>confirm()
-        <button onclick="handleConfirm()">button</button>
-        <span id="confirmAnswer"></span>
-      </li>
-      <li>prompt()
-        <button onclick="handlePrompt(1)">button</button>
-        <span id="promptAnswer"></span>
-      </li>
-    </ul>
-    <hr>
-    <h2>Object</h2>
-    <ul>
-      <li>Object</li>
-      <li>Date</li>
-      <li>Array</li>
-      <li>String</li>
-      <li>Number</li>
-      <li>Boolean</li>
-    </ul>
-    <hr>
-    <h2>Typeof</h2>
-    語法：<code>typeof xxxx</code>
-    <hr>
-    <h2>if else</h2>
-    語法：<code>if(condition){ ... } else { ... }</code>
-    <hr>
-    <h2>function with variables</h2>
-    語法：<code>function name(x,y)</code>
-    <input type="text" id="add_a">
-    +
-    <input type="text" id="add_b">
-    =
-    <span id="variablesAnswer"></span>
-    <button onclick="add(document.getElementById('add_a'), document.getElementById('add_b'))">運算</button>
-    <hr>
-    <h2>homework</h2>
-    <p>Create a function to change car info by object type with if else condition</p>
-    <figure class="car">
-      <img id="image" src="images/model_3_red.png" alt="">
-      <figcaption>
-        <p>名字：<span id="name">Tesla</span></p>
-        <p>型號：<span id="model">Model 3</span></p>
-        <p>重量：<span id="weight">850</span>kg</p>
-        <p>顏色：<span id="color">紅色</span></p>
-        <button onclick="handleCar()">看別台車</button>
-      </figcaption>
-    </figure>
-  </main>
-  <script>
-
-    // pop alert
-    function handleAlert() {
-      alert("this is a alert");
-    }
-
-    // pop confirm
-    function handleConfirm() {
-      let answer = confirm("Do you like the weather today?");
-      if (answer == true) {
-        document.getElementById("confirmAnswer").innerHTML = "Yes, I like it!";
-      } else {
-        document.getElementById("confirmAnswer").innerHTML = "No, I rather stay at home.";
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 2</title>
+    <link rel="stylesheet" href="styles/global.css"/>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <style>
+      .car {
+        border: 1px solid gray;
+        text-align: center;
+        padding: 20px;
+        margin: 20px 0;
+        width: 33%;
       }
 
-    }
+      .car img {
+        width: 100%;
+      }
 
-    // pop prompt
-    function handlePrompt() {
-      let answer = prompt("What's your name?");
-      document.getElementById("promptAnswer").innerHTML = answer;
-    }
+      ul.pop li {
+        margin: 8px 0;
+      }
+    </style>
+  </head>
 
-    function add(x,y){
-      let answer = Number(x.value) + Number(y.value);
-      document.getElementById("variablesAnswer").innerHTML = answer;
-    }
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">Frontend Course</a>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="https://github.com/bluetch/frontend-course">Github</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <h2>Data Type</h2>
+      <hr>
+      <h2>String logic</h2>
+      <hr>
+      <h2>Types are Dynamic</h2>
+      <hr>
+      <h2>Boolean</h2>
+      <hr>
+      <h2>Pop & test</h2>
+      <ul class="pop">
+        <li>alert()
+          <button onclick="handleAlert()">button</button>
+        </li>
+        <li>confirm()
+          <button onclick="handleConfirm()">button</button>
+          <span id="confirmAnswer"></span>
+        </li>
+        <li>prompt()
+          <button onclick="handlePrompt(1)">button</button>
+          <span id="promptAnswer"></span>
+        </li>
+      </ul>
+      <hr>
+      <h2>Object</h2>
+      <ul>
+        <li>Object</li>
+        <li>Date</li>
+        <li>Array</li>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+      </ul>
+      <hr>
+      <h2>Typeof</h2>
+      語法：<code>typeof xxxx</code>
+      <hr>
+      <h2>if else</h2>
+      語法：<code>if(condition){ ... } else { ... }</code>
+      <hr>
+      <h2>function with variables</h2>
+      語法：<code>function name(x,y)</code>
+      <input type="text" id="add_a">
+      +
+      <input type="text" id="add_b">
+      =
+      <span id="variablesAnswer"></span>
+      <button onclick="add(document.getElementById('add_a'), document.getElementById('add_b'))">運算</button>
+      <hr>
+      <h2>homework</h2>
+      <p>Create a function to change car info by object type with if else condition</p>
+      <figure class="car">
+        <img id="image" src="images/model_3_red.png" alt="">
+        <figcaption>
+          <p>名字：<span id="name">Tesla</span>
+          </p>
+          <p>型號：<span id="model">Model 3</span>
+          </p>
+          <p>重量：<span id="weight">850</span>kg</p>
+          <p>顏色：<span id="color">紅色</span>
+          </p>
+          <button onclick="handleCar(1)">看P牌的車</button>
+          <button onclick="handleCar(2)">看B牌的車</button>
+        </figcaption>
+      </figure>
+    </main>
+    <script>
 
-    // homework 汽車 Object
-    let car = {
-      image: "images/porsche_taycan_2022.png",
-      name: "Porsche",
-      model: "Taycan 2022",
-      weight: "980",
-      color: "white",
-    }
-    
-    function handleCar() {
+      // pop alert
+      function handleAlert() {
+        alert("this is a alert");
+      }
 
-      document.getElementById("image").src = car.image;
-      document.getElementById("name").innerHTML = car.name;
-      document.getElementById("model").innerHTML = car.model;
-      document.getElementById("weight").innerHTML = car.weight;
-      document.getElementById("color").innerHTML = car.color;
+      // pop confirm
+      function handleConfirm() {
+        let answer = confirm("Do you like the weather today?");
+        if (answer == true) {
+          document.getElementById("confirmAnswer").innerHTML = "Yes, I like it!";
+        } else {
+          document.getElementById("confirmAnswer").innerHTML = "No, I rather stay at home.";
+        }
 
-    }
-  </script>
-</body>
+      }
+
+      // pop prompt
+      function handlePrompt() {
+        let answer = prompt("What's your name?");
+        document.getElementById("promptAnswer").innerHTML = answer;
+      }
+
+      function add(x, y) {
+        let answer = Number(x.value) + Number(y.value);
+        document.getElementById("variablesAnswer").innerHTML = answer;
+      }
+
+
+      // homework 汽車 Object
+
+
+      function handleCar(x) {
+        if (x == 1) {
+          let car = {
+            image: "images/porsche_taycan_2022.png",
+            name: "Porsche",
+            model: "Taycan 2022",
+            weight: "980",
+            color: "white"
+          }
+          document.getElementById("image").src = car.image;
+          document.getElementById("name").innerHTML = car.name;
+          document.getElementById("model").innerHTML = car.model;
+          document.getElementById("weight").innerHTML = car.weight;
+          document.getElementById("color").innerHTML = car.color;
+        } else if (x == 2) {
+          let car = {
+            image: "images/BMW_Concept_XM_02.jpeg",
+            name: "BMW",
+            model: "G900",
+            weight: "1020",
+            color: "gray"
+          }
+          document.getElementById("image").src = car.image;
+          document.getElementById("name").innerHTML = car.name;
+          document.getElementById("model").innerHTML = car.model;
+          document.getElementById("weight").innerHTML = car.weight;
+          document.getElementById("color").innerHTML = car.color;
+        } else {}
+
+
+      }
+    </script>
+  </body>
 
 </html>
