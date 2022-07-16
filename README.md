@@ -99,7 +99,7 @@ homework: upload first project on Github
 homework: TBD
 ```
 ## 5. JavaScript
-### [5-1 JavaScript](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
+### [5-1. JavaScript](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
 - Introduction
 - Syntax
 - Variables: var, let const
@@ -110,7 +110,8 @@ homework: TBD
 ```
 homework: To create 4 buttons and function to implement +, -, *, /
 ```
-### 5-2 JavaScript
+### [5-2. JavaScript](https://docs.google.com/presentation/d/1UxVlghL8E9qkrkunE19MUd39YbklNbtmUcJhgFJM4JU/edit#slide=id.p)
+- console.log
 - Data Types
 - alert & console.log
 - Booleans
@@ -122,33 +123,107 @@ homework: To create 4 buttons and function to implement +, -, *, /
 ```
 homework:
 ```
-### 5-3 JavaScript
-- TBD
+### [5-3. JavaScript](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/edit#slide=id.p)
+- Numbers & Number Methods
+- Strings & String methods
+- Date: format, get
+- Math: abs, ceil, floor, random, round
+- Switch
 ```
 homework:
 ```
-### 5-4 JavaScript
-- TBD
+### [5-4 JavaScript]()
+- Events
+- Comparisons
+- Array & Array Methods
+- Maps
+- Loop
+```
+homework:
+```
+### [5-5 JavaScript]()
+- Regular Expressions
+- try, catch, finally
+- Arrow Function
+- Classes
+- Scope
 ```
 homework:
 ```
 ## 6. React.js
-- TBD
+### 6-1. React.js
+- Introduction
+- JSX
+- ES6
+- props
+- components
+- import & export
+```
+homework: Create Header, Footer, Layout components with 4 pages
+```
+### 6-2. React.js
+- What is a hook
+- useState
+- useEffect
+- useContext
+- useRef
+- useReducer
+- useCallback
+- useMemo
+- Custom Hooks
+- TypeScript basic
 ```
 homework:
 ```
 ## 7. Next.js
-- TBD
+- Getting Started
+- Pages
+- Data Fetching
+- Dynamic Routes
+- API Routes
+- Deployment
+- Authentication
+- Testing
+
 ```
 homework:
 ```
 ## 8. TailwindCSS
-- TBD
+### 8-1 TailwindCSS
+- Get started
+- Core concept
+- Customization
+- Layout
+- Flexbox & Grid
+- Spacing
+- Size
+- Typography
+- Backgrounds
+- Border
+```
+homework:
+```
+### 8-2 TailwindCSS
+- Effects
+- Filters
+- Tables
+- Transitions & animation
+- Transform
+- Interactivity
+- SVG
+- Accessibility
+- Official Plugins
 ```
 homework:
 ```
 ## 9. RESTfulAPI
-- TBD
+- Intro RESTful API
+- Chrome Inspect: Network
+- Get Data
+- Post Data
+- Put Data
+- Patch Data
+- Delete Data
 ```
 homework:
 ```
