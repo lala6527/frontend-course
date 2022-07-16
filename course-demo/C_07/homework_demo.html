@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <p>3 + 5 =</p>
-  <p id="demo_01"></p>
-  <button onclick={add()}>看答案</button>
-  <script>
-    function add(){
-      var x = 3;
-      var y = 5;
-      var z = x + y;
-      document.getElementById("demo_01").innerHTML = z;
-    }
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 01</title>
+  </head>
+  <body>
+    <p>3 + 5 =
+      <span id="demo_01"></span>
+      <button onclick="add(3,5)">看答案</button>
+    </p>
+    <p>3 - 5 =
+      <span id="demo_02"></span>
+      <button onclick="substract(3, 5)">看答案</button>
+    </p>
+    <p>3 * 5 =
+      <span id="demo_03"></span>
+      <button onclick="multiply(3, 5)">看答案</button>
+    </p>
+    <p>3 / 5 =
+      <span id="demo_04"></span>
+      <button onclick="divided(3, 5)">看答案</button>
+    </p>
+    <script>
+      function add(a, b) {
+        document.getElementById('demo_01').innerHTML = a + b;
+      }
+      function substract(a, b) {
+        document.getElementById('demo_02').innerHTML = a - b;
+      }
+      function multiply(a, b) {
+        document.getElementById('demo_03').innerHTML = a * b;
+      }
+      function divided(a, b) {
+        document.getElementById('demo_04').innerHTML = a / b;
+      }
+    </script>
+  </body>
 </html>
