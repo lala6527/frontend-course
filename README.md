@@ -139,7 +139,7 @@ homework:
 - Math: abs, ceil, floor, random, round
 - Switch
 ```
-homework:
+homework: to use switch to make star sign or alcohol menu
 ```
 ### [5-4 JavaScript]()
 - Events
