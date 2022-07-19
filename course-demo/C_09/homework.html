@@ -21,8 +21,10 @@
     }
 
     ul.star li:hover {
-      background-color: rgb(209, 255, 255);
+      background-color: #9B886F;
+      color: white;
       cursor: pointer;
+      border-radius: 4px;
     }
 
     .grid {
@@ -59,12 +61,12 @@
         <li onClick="star('Sagittarius')">射手座</li>
       </ul>
     </aside>
+    <img id="starImg" src="" alt="">
     <article>
       <h1 id="starName"></h1>
       <p id="starDate"></p>
       <p id="starDesc"></p>
     </article>
-    <img id="starImg" src="" alt="">
   </main>
   <script>
     let starName = document.getElementById('starName');
