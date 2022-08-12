@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course 10 - JavaScript 3</title>
+    <link rel="stylesheet" href="styles/global.css"/>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <style>
+      .emoji {
+        width: 32px;
+        height: 32px;
+      }
+    </style>
+  </head>
+  <body onload="handleOnLoad()">
+    <header class="header">
+      <a href="index.html" class="logo">Frontend Course</a>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="index.html">JavaScript</a></li>
+        <li><a href="https://github.com/bluetch/frontend-course">Github</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <h1>Events</h1>
+      <h3>onclick</h3>
+      <p>The user clicks an HTML element</p>
+      <p>outout: <span id="onClickDemo"></span></p>
+      <button onclick="displayDate()">The time is?</button>
+      <hr>
+      <h3>onchange</h3>
+      <p>An HTML element has been changed</p>
+      <select id="mySelect" onchange="displayName()">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+      </select>
+      <p>outout: <span id="onChangeDemo"></span></p>
+      <hr>
+      <h3>onmouseover</h3>
+      <p>The user moves the mouse over an HTML element</p>
+      <h3>onmouseout</h3>
+      <p>The user moves the mouse away from an HTML element</p>
+      <img onmouseover="changeSize(this, 64)" onmouseout="changeSize(this, 32)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Noto_Emoji_KitKat_263a.svg/640px-Noto_Emoji_KitKat_263a.svg.png" alt="demo for onmouse over and out" class="emoji">
+      <hr>
+      <h3>onkeydown</h3>
+      <p>The user pushes a keyboard key</p>
+      <input type="text" onkeydown="handleKeydown(event)">
+      <p>output: <span id="onKeydownDemo"></span></p>
+      <hr>
+      <h3>onload</h3>
+      <p>The browser has finished loading the page</p>
+      <hr>
+      <h1>Comparisons</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>operator</th>
+            <th>description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>==</td>
+            <td>equal to</td>
+          </tr>
+          <tr>
+            <td>===</td>
+            <td>equal value and equal type</td>
+          </tr>
+          <tr>
+            <td>!=</td>
+            <td>not equal</td>
+          </tr>
+          <tr>
+            <td>!==</td>
+            <td>not equal value or not equal type</td>
+          </tr>
+          <tr>
+            <td>></td>
+            <td>greater than</td>
+          </tr>
+          <tr>
+            <td><</td><td>lessthan</td></tr><tr><td>>=</td>
+            <td>greater than or equal to</td>
+          </tr>
+          <tr>
+            <td>
+              <=</td>
+                <td>less than or equal to</td>
+              </tr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <h1>Array & Array method</h1>
+      <p>The JavaScript method toString() converts an array to a string of (comma separated) array values.</p>
+      <div class="h-30"></div>
+      <code>let train = ["aaa", "bbb", "ccc"];</code>
+      <h3>toString()</h3>
+      <button onclick="handleArray('toString')">toString()</button>
+      <p>output: <span id="toStringDemo"></span></p>
+      <hr>
+      <h3>join()</h3>
+      <button onclick="handleArray('join')">join()</button>
+      <p>output: <span id="joinDemo"></span></p>
+      <hr>
+      <h3>join()</h3>
+      <button onclick="handleArray('join')">join()</button>
+      <p>output: <span id="joinDemo"></span></p>
+    </main>
+    <script>
+      function displayDate() {
+        document.getElementById("onClickDemo").innerHTML = Date();
+      }
+
+      function displayName() {
+        let x = document.getElementById("mySelect").value;
+        document.getElementById("onChangeDemo").innerHTML = "You selected: " + x;
+      }
+
+      function changeSize(img, size) {
+        img.style.height = size + "px";
+        img.style.width = size + "px";
+      }
+
+      function handleKeydown(event) {
+        // Keycode reference: https://keycode.info/
+        // let unicode = event.which;
+        let unicode = event.key;
+        document.getElementById("onKeydownDemo").innerHTML = unicode;
+      }
+
+      function handleOnLoad() { // alert("Page is loaded");
+      }
+
+      function handleArray(x) {
+        let train = ["aaa", "bbb", "ccc"];
+        switch (x) {
+          case "toString":
+            document.getElementById("toStringDemo").innerHTML = train.toString();
+            break;
+          case "join":
+            document.getElementById("joinDemo").innerHTML = train.join(" * ");
+            break;
+        }
+      }
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 60px;
+}
+
+.tag{
+  background-color: gray;
+  padding: 2px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+hr{
+  margin: 48px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.h-30{
+  height: 30px;
+}
+
+h1{
+  margin: 16px 0 32px;
+  font-size: 40px;
+}
+h2{
+  margin: 16px 0;
+  font-size: 32px;
+}
+
+h3{
+  margin: 16px 0 16px;
+  font-size: 24px;
+}
+
+ul, ol{
+  padding-left: 16px;
+}
+
+p{
+  margin: 2px 0 4px;
+}
+
+button{
+  padding: 4px 8px;
+}
+
+code{
+  display: inline-block;
+  padding: 4px;
+  background-color: #e7e7e7;
+  margin: 20px 0;
+}
+
+.table{
+  width: 100%;
+  border: 1px solid gray;
+  text-align: center;
+  padding: 4px;
+}
+.table tbody tr:nth-child(odd){
+  background-color: #ccc;
+}
