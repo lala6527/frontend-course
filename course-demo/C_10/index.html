@@ -32,7 +32,7 @@
       <h1>Events</h1>
       <p>HTML events are "things" that happen to HTML elements.</p>
       <p>When JavaScript is used in HTML pages, JavaScript can "react" on these events.</p>
-      
+
       <!-- onclick HTML -->
 
       <h3>onclick</h3>
@@ -198,7 +198,7 @@
         <span class="arrayOriginal"></span>
         ];</code>
       <input type="text" id="unshiftValue">
-      <button onclick="handleArray('unshift')">train.push()</button>
+      <button onclick="handleArray('unshift')">train.unshift()</button>
       <p>output:
         <span id="unshiftDemo"></span>
       </p>
@@ -565,7 +565,7 @@
             let sum4 = "";
             let i = 0;
             while (i < train.length) {
-              sum4 += "<p>" + train[i] + " </p>";
+              sum4 += "<p class='text-green'>" + train[i] + " </p>";
               i++;
             }
             document.getElementById("whileDemo").innerHTML = sum4;
