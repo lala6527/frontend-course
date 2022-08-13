@@ -170,7 +170,7 @@ homework: check mobile number format
 - components
 - import & export
 ```
-homework：Create Header, Footer, Layout components with 4 pages
+homework:
 ```
 ### 6-1. React.js
 - Introduction
@@ -180,7 +180,7 @@ homework：Create Header, Footer, Layout components with 4 pages
 - components
 - import & export
 ```
-homework: Create Header, Footer, Layout components with 4 pages
+homework:
 ```
 ### 6-2. React.js
 - What is a hook
