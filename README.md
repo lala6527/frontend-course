@@ -151,7 +151,7 @@ homework: to use switch to make star sign or alcohol menu
 homework: Ninety-nine multiplication table
 ```
 
-### [5-5 JavaScript]()
+### 5-5 JavaScript
 - Arrow function
 - this keyword
 - JSON
