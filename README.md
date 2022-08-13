@@ -162,16 +162,7 @@ homework: check mobile number format
 ```
 
 ## 6. React.js
-- Introduction
-- SCSS
-- JSX
-- ES6
-- props
-- components
-- import & export
-```
-homework:
-```
+
 ### 6-1. React.js
 - Introduction
 - JSX
