@@ -141,25 +141,27 @@ homework:
 ```
 homework: to use switch to make star sign or alcohol menu
 ```
-### [5-4 JavaScript]()
+### [5-4 JavaScript](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/edit#slide=id.p)
 - Events
 - Comparisons
 - Array & Array Methods
 - Maps
 - Loop
 ```
-homework:
+homework: Ninety-nine multiplication table
 ```
-### [5-5 JavaScript]()
-- Regular Expressions
-- try, catch, finally
-- Arrow Function
-- Classes
-- Scope
-```
-homework:
-```
+
 ## 6. React.js
+- Introduction
+- SCSS
+- JSX
+- ES6
+- props
+- components
+- import & export
+```
+homework：Create Header, Footer, Layout components with 4 pages
+```
 ### 6-1. React.js
 - Introduction
 - JSX
@@ -198,7 +200,6 @@ homework:
 homework:
 ```
 ## 8. TailwindCSS
-### 8-1 TailwindCSS
 - Get started
 - Core concept
 - Customization
@@ -209,19 +210,6 @@ homework:
 - Typography
 - Backgrounds
 - Border
-```
-homework:
-```
-### 8-2 TailwindCSS
-- Effects
-- Filters
-- Tables
-- Transitions & animation
-- Transform
-- Interactivity
-- SVG
-- Accessibility
-- Official Plugins
 ```
 homework:
 ```
@@ -237,7 +225,9 @@ homework:
 homework:
 ```
 ## 10. Interview
-- Target your goal
-- Interview questions
-- Practice: W3Schools LeetCode
-- Portfolio
+- LeeCode
+- common questions
+- personal website / github
+```
+homework:
+```

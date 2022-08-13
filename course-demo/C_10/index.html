@@ -12,24 +12,37 @@
         width: 32px;
         height: 32px;
       }
+      .box{
+        border: 1px solid white;
+        background: red;
+        padding: 4px;
+      }
     </style>
   </head>
   <body onload="handleOnLoad()">
     <header class="header">
       <a href="index.html" class="logo">Frontend Course</a>
       <ul>
-        <li><a href="index.html">首頁</a></li>
-        <li><a href="index.html">JavaScript</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="homework.html">Homework</a></li>
         <li><a href="https://github.com/bluetch/frontend-course">Github</a></li>
       </ul>
     </header>
     <main class="container">
       <h1>Events</h1>
+
+      <!-- onclick HTML -->
+
       <h3>onclick</h3>
       <p>The user clicks an HTML element</p>
-      <p>outout: <span id="onClickDemo"></span></p>
+      <p>outout:
+        <span id="onClickDemo"></span>
+      </p>
       <button onclick="displayDate()">The time is?</button>
       <hr>
+
+      <!-- onchange HTML -->
+
       <h3>onchange</h3>
       <p>An HTML element has been changed</p>
       <select id="mySelect" onchange="displayName()">
@@ -38,8 +51,13 @@
         <option value="Mercedes">Mercedes</option>
         <option value="Volvo">Volvo</option>
       </select>
-      <p>outout: <span id="onChangeDemo"></span></p>
+      <p>outout:
+        <span id="onChangeDemo"></span>
+      </p>
       <hr>
+
+      <!-- onmouseover & onmouseout HTML -->
+
       <h3>onmouseover</h3>
       <p>The user moves the mouse over an HTML element</p>
       <h3>onmouseout</h3>
@@ -49,7 +67,9 @@
       <h3>onkeydown</h3>
       <p>The user pushes a keyboard key</p>
       <input type="text" onkeydown="handleKeydown(event)">
-      <p>output: <span id="onKeydownDemo"></span></p>
+      <p>output:
+        <span id="onKeydownDemo"></span>
+      </p>
       <hr>
       <h3>onload</h3>
       <p>The browser has finished loading the page</p>
@@ -100,20 +120,270 @@
       <h1>Array & Array method</h1>
       <p>The JavaScript method toString() converts an array to a string of (comma separated) array values.</p>
       <div class="h-30"></div>
-      <code>let train = ["aaa", "bbb", "ccc"];</code>
+
+      <!-- toString() HTML -->
+
       <h3>toString()</h3>
-      <button onclick="handleArray('toString')">toString()</button>
-      <p>output: <span id="toStringDemo"></span></p>
+      <p>converts an array to a string of (comma separated) array values.</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('toString')">train.toString()</button>
+      <p>output:
+        <span id="toStringDemo"></span>
+      </p>
       <hr>
+
+      <!-- join() HTML -->
+
       <h3>join()</h3>
-      <button onclick="handleArray('join')">join()</button>
-      <p>output: <span id="joinDemo"></span></p>
+      <p>The join() method also joins all array elements into a string.
+                                        It behaves just like toString(), but in addition you can specify the separator.</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('join')">train.join()</button>
+      <p>output:
+        <span id="joinDemo"></span>
+      </p>
       <hr>
-      <h3>join()</h3>
-      <button onclick="handleArray('join')">join()</button>
-      <p>output: <span id="joinDemo"></span></p>
+
+      <!-- pop() HTML -->
+
+      <h3>pop()</h3>
+      <p>Removes the last element from an array.</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('pop')">train.pop()</button>
+      <p>output:
+        <span id="popDemo"></span>
+      </p>
+      <hr>
+
+      <!-- push() HTML -->
+      
+      <h3>push()</h3>
+      <p>Adds a new element to an array (at the end)</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <input type="text" id="pushValue">
+      <button onclick="handleArray('push')">train.push()</button>
+      <p>output:
+        <span id="pushDemo"></span>
+      </p>
+      <hr>
+
+      <!-- shift() HTML -->
+
+      <h3>shift()</h3>
+      <p>Removes the first array element and "shifts" all other elements to a lower index.</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('shift')">train.shift()</button>
+      <p>output:
+        <span id="shiftDemo"></span>
+      </p>
+      <hr>
+
+      <!-- unshift() HTML -->
+
+      <h3>unshift()</h3>
+      <p>Adds a new element to an array (at the beginning), and "unshifts" older elements</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <input type="text" id="unshiftValue">
+      <button onclick="handleArray('unshift')">train.push()</button>
+      <p>output:
+        <span id="unshiftDemo"></span>
+      </p>
+      <hr>
+
+      <!-- splice() HTML -->
+
+      <h3>splice()</h3>
+      <p>The splice() method adds and/or removes array elements.</p>
+      <p>The splice() method overwrites the original array.</p>
+      <h4>Syntax</h4>
+      <code class="white">array.splice(index, howmany, item1, ....., itemX)</code>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('splice')">train.splice(2, 0, "豪華車廂", "貨櫃廂")</button>
+      <p>output:
+        <span id="spliceDemo"></span>
+      </p>
+      <hr>
+
+      <!-- slice() HTML -->
+
+      <h3>slice()</h3>
+      <p>slices out a piece of an array into a new array.</p>
+      <h4>Syntax</h4>
+      <code class="white">array.slice(start, end)</code>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('slice')">train.slice(1, 3)</button>
+      <p>output:
+        <span id="sliceDemo"></span>
+      </p>
+      <hr>
+
+      <!-- sort() HTML -->
+
+      <h3>sort()</h3>
+      <p>sorts an array alphabetically. Can also sort numeric.</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('sort')">train.sort()</button>
+      <p>output:
+        <span id="sortDemo"></span>
+      </p>
+      <hr>
+
+      <!-- reverse() HTML -->
+
+      <h3>reverse()</h3>
+      <p>reverses the elements in an array, use it to sort an array in descending order.</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('reverse')">train.reverse()</button>
+      <p>output:
+        <span id="reverseDemo"></span>
+      </p>
+      <hr>
+
+      <!-- forEach() HTML -->
+
+      <h3>forEach()</h3>
+      <p>calls a function (a callback function) once for each array element.</p>
+      <code>const numbers = [65, 44, 33, 2, 14];</code>
+      <button onclick="handleArray('foreach')">train.forEach(function)</button>
+      <p>output:
+        <span id="foreachDemo"></span>
+      </p>
+      <hr>
+
+      <!-- map() HTML -->
+
+      <h3>map()</h3>
+      <p>creates a new array from calling a function for every array element.</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('map')">train.map(function)</button>
+      <p>output:
+        <span id="mapDemo"></span>
+      </p>
+      <hr>
+
+      <!-- filter() HTML -->
+
+      <h3>filter()</h3>
+      <p>creates a new array with array elements that passes a test.</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('filter')">train.filter(function)</button>
+      <p>output:
+        <span id="filterDemo"></span>
+      </p>
+      <hr>
+
+      <!-- reduce() HTML -->
+
+      <h3>reduce()</h3>
+      <p>runs a function on each array element to produce (reduce it to) a single value.</p>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleArray('reduce')">train.reduce(function)</button>
+      <p>output:
+        <span id="reduceDemo"></span>
+      </p>
+      <hr>
+
+      <!-- for HTML -->
+
+      <h3>for</h3>
+      <p>Loops through a block of code a number of times</p>
+      <h4>Syntax</h4>
+      <code class="white">
+        <p>for (expression 1; expression 2; expression 3) {</p>
+          <p class="text-green">// code block to be executed</p>
+        <p>}</p>
+      </code>
+      <code>let train = [
+        <span class="arrayOriginal"></span>
+        ];</code>
+      <button onclick="handleLoop('for')">for( in )</button>
+      <p>output:
+        <span id="forDemo"></span>
+      </p>
+      <hr>
+
+      <!-- for of HTML -->
+
+      <h3>for in</h3>
+      <p>The JavaScript for in statement loops through the properties of an Object or Array</p>
+      <h4>Syntax</h4>
+      <code class="white">
+        <p>for (key in object) {</p>
+          <p class="text-green">// code block to be executed</p>
+        <p>}</p>
+      </code>
+      <button onclick="handleLoop('forin')">for(key in object)</button>
+      <p>output:
+        <span id="forInDemo"></span>
+      </p>
+      <hr>
+
+      <!-- for of HTML -->
+
+      <h3>for of</h3>
+      <p>The JavaScript for of statement loops through the values of an iterable object.</p>
+      <p>It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more</p>
+      <h4>Syntax</h4>
+      <code class="white">
+        <p>for (variable of iterable) {</p>
+          <p class="text-green">// code block to be executed</p>
+        <p>}</p>
+      </code>
+      <button onclick="handleLoop('forof')">for(variable of iterable)</button>
+      <p>output:
+        <span id="forOfDemo"></span>
+      </p>
+      <hr>
+
+      <!-- white HTML -->
+
+      <h3>white</h3>
+      <p>The while loop loops through a block of code as long as a specified condition is true.</p>
+      <h4>Syntax</h4>
+      <code class="white">
+        <p>white (condition) {</p>
+          <p class="text-green">// code block to be executed</p>
+        <p>}</p>
+      </code>
+      <button onclick="handleLoop('while')">white(condition)</button>
+      <p>output:
+        <span id="whileDemo"></span>
+      </p>
+      <hr>
+
     </main>
     <script>
+
+      // =========================================================================
+      // ============================== Event ====================================
+      // =========================================================================
+
       function displayDate() {
         document.getElementById("onClickDemo").innerHTML = Date();
       }
@@ -138,14 +408,168 @@
       function handleOnLoad() { // alert("Page is loaded");
       }
 
-      function handleArray(x) {
-        let train = ["aaa", "bbb", "ccc"];
-        switch (x) {
+
+
+      // =========================================================================
+      // ======================= Array method ====================================
+      // =========================================================================
+
+      let train = [
+        "X火車頭",
+        "A車廂",
+        "B車廂",
+        "C車廂",
+        "Z火車尾"
+      ];
+
+      let arrayCode = [...document.querySelectorAll(".arrayOriginal")];
+      arrayCode.map((item, index) => {
+        item.innerHTML = train;
+      }
+      );
+
+      function handleArray(method) {
+        switch (method) {
           case "toString":
             document.getElementById("toStringDemo").innerHTML = train.toString();
             break;
+
           case "join":
             document.getElementById("joinDemo").innerHTML = train.join(" * ");
+            break;
+
+          case "pop":
+            // pop() removes the last element from an array.
+            train.pop();
+            document.getElementById("popDemo").innerHTML = train;
+            break;
+
+          case "push":
+            // push() adds a new element to an array (at the end).
+            train.push(document.getElementById("pushValue").value);
+            document.getElementById("pushDemo").innerHTML = train;
+            document.getElementById("pushValue").value = "";
+            break;
+
+          case "shift":
+            // shift() removes the first array element and "shifts" all other elements to a lower index.
+            train.shift();
+            document.getElementById("shiftDemo").innerHTML = train;
+            break;
+
+          case "unshift":
+            // unshift() adds a new element to an array (at the beginning), and "unshifts" older elements.
+            train.unshift(document.getElementById("unshiftValue").value);
+            document.getElementById("unshiftDemo").innerHTML = train;
+            document.getElementById("unshiftValue").value = "";
+            break;
+
+          case "splice":
+            // splice() adds/removes elements from an array.
+            train.splice(2, 0, "豪華車廂", "貨櫃廂");
+            document.getElementById("spliceDemo").innerHTML = train;
+            break;
+
+          case "slice":
+            // splice() slices out a piece of an array into a new array.
+            let cut = train.slice(1, 3);
+            document.getElementById("sliceDemo").innerHTML = cut;
+            break;
+
+          case "sort":
+            // sort() sorts an array alphabetically. Can also sort numeric.
+            document.getElementById("sortDemo").innerHTML = train.sort();
+            break;
+
+          case "reverse":
+            // reverse() reverses the elements in an array, use it to sort an array in descending order.
+            document.getElementById("reverseDemo").innerHTML = train.reverse();
+            break;
+
+          case "foreach":
+            // forEach() calls a function (a callback function) once for each array element.
+
+            let sum = 0;
+            
+            function toSum(item){
+              sum += item + "(YA!!) ";
+            };
+
+            train.forEach(toSum);
+            document.getElementById("foreachDemo").innerHTML = sum;
+            break;
+
+          case "map":
+            // map() creates a new array from calling a function for every array element.
+            let mapArray = train.map(function(item){
+              return "<span class='box'>" + item + "</span>";
+            });
+            document.getElementById("mapDemo").innerHTML = mapArray;
+            break;
+
+          case "filter":
+            // filter() creates a new array with array elements that passes a test.
+
+            let filterArray = train.filter(function(item){
+              return item.length > 3;
+            })
+            document.getElementById("filterDemo").innerHTML =  filterArray;
+            break;
+
+          case "reduce":
+            // reduce() runs a function on each array element to produce (reduce it to) a single value.
+            let reduceArray = train.reduce(function(total, item){
+              return total + item;
+            },"");
+            document.getElementById("reduceDemo").innerHTML = reduceArray;
+            break;
+
+          default:
+            break;
+        }
+      }
+
+      // =========================================================================
+      // =========================== For loop ====================================
+      // =========================================================================
+
+      function handleLoop(method) {
+        switch (method) {
+          case "for":
+            let sum = "";
+            for (let i = 0; i < train.length; i++) {
+              sum += "<p>" + train[i] + " </p>";
+            }
+            document.getElementById("forDemo").innerHTML = sum;
+            break;
+
+          case "forin":
+            let sum2 = "";
+            for (let key in train) {
+              sum2 += "<p class='text-green'>" + train[key] + " </p>";
+            }
+            document.getElementById("forInDemo").innerHTML = sum2;
+            break;
+
+          case "forof":
+            let sum3 = "";
+            for (let item of train) {
+              sum3 += "<p class='text-green'>" + item + " </p>";
+            }
+            document.getElementById("forOfDemo").innerHTML = sum3;
+            break;
+
+          case "while":
+            let sum4 = "";
+            let i = 0;
+            while (i < train.length) {
+              sum4 += "<p>" + train[i] + " </p>";
+              i++;
+            }
+            document.getElementById("whileDemo").innerHTML = sum4;
+            break;
+
+          default:
             break;
         }
       }

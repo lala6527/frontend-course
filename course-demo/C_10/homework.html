@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homework 10</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 10</title>
+    <link rel="stylesheet" href="styles/global.css"/>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <style>
+
+      h1{
+        text-align: center;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        position: relative;
+        max-width: 560px;
+        margin: 10px auto;
+        padding: 5px;
+        color: #ccc;
+        background: #fff;
+        box-shadow: 1px 2px 3px 0 #ddd;
+        z-index: 1;
+      }
+
+      .grid .item {
+        position: relative;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">Frontend Course</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="homework.html">Homework</a></li>
+        <li><a href="https://github.com/bluetch/frontend-course">Github</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <h1>九九乘法表</h1>
+      <div id="result"></div>
+    </main>
+
+
+    <script>
+      let bg_color;
+      // 畫表格
+      let table = "";
+      table += '<div class="grid">';
+      // 讓i產出1~9
+      for (i = 1; i < 10; i ++) { // 讓j產出1~9
+        for (j = 1; j < 10; j ++) { // 判斷顏色
+          if (i == j) {
+            bg_color = '#716746';
+          } else if (i == 1) {
+            bg_color = 'rgba(187,212,61,0.2)';
+          } else if (j == 1) {
+            bg_color = "rgba(244,240,165,0.5)";
+          } else {
+            bg_color = '#fff';
+          }
+          // 畫li，裡頭放入i*j數值
+          table+='<div class="item" style="background:' + bg_color + '">' + i * j + '</div>';
+        }
+      }
+
+      table += ('</ul>');
+      document.getElementById('result').innerHTML = table;
+    </script>
+
+  </body>
 </html>
