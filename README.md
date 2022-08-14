@@ -227,7 +227,7 @@ homework:
 homework:
 ```
 ## 10. Interview Prepare
-- LeeCode
+- [LeetCode](https://leetcode.com/)
 - common questions
 - personal website / github
 ```
