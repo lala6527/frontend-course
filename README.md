@@ -119,7 +119,7 @@ homework: TBD
 ```
 homework: To create 4 buttons and function to implement +, -, *, /
 ```
-### [5-2. JavaScript](https://docs.google.com/presentation/d/1UxVlghL8E9qkrkunE19MUd39YbklNbtmUcJhgFJM4JU/edit#slide=id.p)
+### [5-2. JavaScript](https://docs.google.com/presentation/d/1UxVlghL8E9qkrkunE19MUd39YbklNbtmUcJhgFJM4JU/)
 - console.log
 - Data Types
 - alert & console.log
@@ -132,7 +132,7 @@ homework: To create 4 buttons and function to implement +, -, *, /
 ```
 homework:
 ```
-### [5-3. JavaScript](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/edit#slide=id.p)
+### [5-3. JavaScript](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/)
 - Numbers & Number Methods
 - Strings & String methods
 - Date: format, get
@@ -141,7 +141,7 @@ homework:
 ```
 homework: to use switch to make star sign or alcohol menu
 ```
-### [5-4 JavaScript](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/edit#slide=id.p)
+### [5-4 JavaScript](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/)
 2022-08-13
 - Events
 - Comparisons
@@ -153,22 +153,23 @@ homework: Ninety-nine multiplication table
 ```
 
 ### 5-5 JavaScript
-- Arrow function
+- ~~Arrow function~~
 - this keyword
-- JSON
+- ~~JSON~~
 - Scope
-- Regular Expressions
+- ~~Regular Expressions~~
 ```
 homework: check mobile number format
 ```
 
 ## 6. React.js
 
-### 6-1. React.js
+### [6-1. React.js](https://docs.google.com/presentation/d/17QwU1McgvM90c6PI7RDpOQt2YoyHYf5Hxdmy_L1jkG4/)
 - Introduction
-- Arrow function
+- (JS) Arrow function
+- SCSS
 - JSX
-- ES6
+- Route
 - props
 - components
 ```
@@ -182,9 +183,9 @@ homework:
 - useRef
 ```
 homework: components, pages, and news
-
 ```
 ### 6-3. React.js
+- (JS) Regular Expressions
 - useReducer
 - useCallback
 - useMemo
@@ -197,6 +198,7 @@ homework:
 - Getting Started
 - Pages
 - Data Fetching
+- (JS) JSON
 - Dynamic Routes
 - API Routes
 - Testing / Jest
