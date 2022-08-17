@@ -166,11 +166,11 @@ homework: check mobile number format
 
 ### 6-1. React.js
 - Introduction
+- Arrow function
 - JSX
 - ES6
 - props
 - components
-- import & export
 ```
 homework:
 ```
@@ -180,13 +180,18 @@ homework:
 - useEffect
 - useContext
 - useRef
+```
+homework: components, pages, and news
+
+```
+### 6-3. React.js
 - useReducer
 - useCallback
 - useMemo
 - Custom Hooks
 - TypeScript basic
 ```
-homework:
+homework: 
 ```
 ## 7. Next.js
 - Getting Started
@@ -194,9 +199,7 @@ homework:
 - Data Fetching
 - Dynamic Routes
 - API Routes
-- Deployment
-- Authentication
-- Testing
+- Testing / Jest
 
 ```
 homework:
