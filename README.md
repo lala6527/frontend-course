@@ -169,9 +169,9 @@ homework: check mobile number format
 - (JS) Arrow function
 - SCSS
 - JSX
-- Route
 - props
 - components
+- Route
 ```
 homework:
 ```
