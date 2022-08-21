@@ -45,13 +45,11 @@
       <h1>九九乘法表</h1>
       <div id="result"></div>
     </main>
-
-
     <script>
       let bg_color;
       // 畫表格
-      let table = "";
-      table += '<div class="grid">';
+      let grid = "";
+      grid += '<div class="grid">';
       // 讓i產出1~9
       for (i = 1; i < 10; i ++) { // 讓j產出1~9
         for (j = 1; j < 10; j ++) { // 判斷顏色
@@ -65,13 +63,11 @@
             bg_color = '#fff';
           }
           // 畫li，裡頭放入i*j數值
-          table+='<div class="item" style="background:' + bg_color + '">' + i * j + '</div>';
+          grid+='<div class="item" style="background:' + bg_color + '">' + i * j + '</div>';
         }
       }
-
-      table += ('</ul>');
-      document.getElementById('result').innerHTML = table;
+      grid += ('</div>');
+      document.getElementById('result').innerHTML = grid;
     </script>
-
   </body>
 </html>
