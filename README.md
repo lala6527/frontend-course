@@ -152,35 +152,25 @@ homework: to use switch to make star sign or alcohol menu
 homework: Ninety-nine multiplication table
 ```
 
-### 5-5 JavaScript
-- ~~Arrow function~~
-- this keyword
-- ~~JSON~~
-- Scope
-- ~~Regular Expressions~~
-```
-homework: check mobile number format
-```
-
 ## 6. React.js
 
 ### [6-1. React.js](https://docs.google.com/presentation/d/17QwU1McgvM90c6PI7RDpOQt2YoyHYf5Hxdmy_L1jkG4/)
 - Introduction
 - (JS) Arrow function
-- SCSS
-- JSX
-- props
-- components
 - Route
+- SCSS / module
+- JSX
+- Components
+- props
 ```
 homework:
 ```
-### 6-2. React.js
+### [6-2. React.js](https://docs.google.com/presentation/d/1wQBB87_DP4bL2z9AmMb9RFxJvRjXM4BRGXK5z-kV01E/)
 - What is a hook
 - useState
 - useEffect
-- useContext
 - useRef
+- useContext
 ```
 homework: components, pages, and news
 ```
