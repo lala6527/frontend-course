@@ -163,7 +163,7 @@ homework: Ninety-nine multiplication table
 - Components
 - props
 ```
-homework:
+homework: components, pages, and news
 ```
 ### [6-2. React.js](https://docs.google.com/presentation/d/1wQBB87_DP4bL2z9AmMb9RFxJvRjXM4BRGXK5z-kV01E/)
 - What is a hook
@@ -172,7 +172,7 @@ homework:
 - useRef
 - useContext
 ```
-homework: components, pages, and news
+homework: Todo list
 ```
 ### 6-3. React.js
 - (JS) Regular Expressions
@@ -180,7 +180,7 @@ homework: components, pages, and news
 - useCallback
 - useMemo
 - Custom Hooks
-- TypeScript basic
+- TypeScript
 ```
 homework: 
 ```
