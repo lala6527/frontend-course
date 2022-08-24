@@ -1,0 +1,51 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat((2, 1fr));
+  gap: 20px;
+}
+
+.todos{
+  .todo{
+    border: 1px solid gray;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    h3{
+      margin-top: 0;
+      
+    }
+    .finish{
+      vertical-align: top;
+      display: inline-block;
+      margin-left: 8px;
+      background-color: darkgray;
+      color: white;
+      padding: 4px;
+      font-size: 12px;
+      border-radius: 4px;
+    }
+    .tag{
+      @extend .finish;
+      background-color: cornflowerblue;
+      color: white;
+    }
+  }
+}
+
+.actions{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  input{
+    padding: 7px;
+    
+  }
+  label{
+    display: flex;
+    flex-direction: column ;
+    margin-bottom: 24px;
+    span{
+      margin-bottom: 8px;
+    }
+  }
+}
