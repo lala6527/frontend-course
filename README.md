@@ -184,8 +184,6 @@ homework: to use switch to make star sign or alcohol menu
 
 ### [5-4 JavaScript](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/)
 
-2022-08-13
-
 - Events
 - Comparisons
 - Array & Array Methods
