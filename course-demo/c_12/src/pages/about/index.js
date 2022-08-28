@@ -81,7 +81,7 @@ export const About = () => {
                   {item.id}.{item.name}
                   <span className={item.state ? styles.finish : styles.tag}>{tag}</span>
                 </h3>
-                <p>預計完成日期：{item.dueDate}</p>
+                <p>{item.state ? "完成日期：" : "預計完成日期："}{item.dueDate}</p>
                 {!item.state && (<Button onClick={() => handleFinish(item.id)}>完成</Button>)}
               </div>
             )
