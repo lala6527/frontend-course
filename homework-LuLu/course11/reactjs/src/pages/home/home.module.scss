@@ -1,7 +1,11 @@
+h1{
+text-align: center;    
+}
+
 .message{
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
-    border: 1px solid gold;
+    border: 2px solid gold;
     display: flex;
     img{
         width: 30%;
@@ -22,5 +26,6 @@
             color:rgb(30, 0, 255);
             margin: 0 0 4px;
         }
+       
     }
 }

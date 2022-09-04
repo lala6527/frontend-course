@@ -1,5 +1,5 @@
 .header{
-    background-color: black;
+    background-color:gold;
     display: flex;
     justify-content:space-between ;
     .brand{
@@ -11,6 +11,12 @@
         }
         li{
             display: inline-block;
+        }
+        a{
+            color: rgb(90, 62, 3);
+            display: block;
+            padding: 10px;
+            text-decoration: none;
         }
     }
 }

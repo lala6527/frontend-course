@@ -1,21 +1,21 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import{Header} from'./compontents/Header';
-// import{Footer} from'./compontents/Footer';
+import{Header} from'./components/Header';
+import{Footer} from'./components/Footer';
 import{Home} from"./pages/home";
-// import{About} from"./pages/about";
-// import{Contact} from"./pages/contact";
-// import'./styles/globle.scss';
+import{About} from"./pages/about";
+import{Contact} from"./pages/contact";
+import'./styles/global.scss';
 
 const App=() =>{
   return(
     <BrowserRouter>
-    {/* <Header/> */}
+     <Header/> 
     <Routes>
-    {/* <Route path="/contact" element={<Contact/>}/>
-    <Route path="/about" element={<About/>}/> */}
+    <Route path="contact" element={<Contact/>}/>
+    <Route path="about" element={<About/>}/>
     <Route path="/" element={<Home/>}/>
     </Routes>
-    {/* <Footer /> */}
+     <Footer />
     </BrowserRouter>
    
   );

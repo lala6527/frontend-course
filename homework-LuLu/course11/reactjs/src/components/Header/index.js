@@ -5,6 +5,7 @@ export const Header =()=>{
     return (
         <header className={style.header}>
             <div className={style.brand}>
+              <p>LULU</p>
             </div>
             <nav>
                 <ul>
@@ -17,6 +18,9 @@ export const Header =()=>{
                     <li>
                         <Link to="/contact">Contact</Link>
                     </li>
+                    <li>
+                <a href="https://github.com/bluetch/frontend-course/homework-LUlu" target="_blank" rel="noreferrer">GitHub</a>
+            </li>
                 </ul>
             </nav>
         </header>
